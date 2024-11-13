@@ -11,10 +11,17 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>None</DebugType>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="lib\painlevelpng.png" />
+    <None Remove="lib\painlevel_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <TizenLibrary Remove="lib\painlevelpng.png" />
+    <TizenLibrary Remove="lib\painlevel_background.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="lib\" />
-    <Folder Include="res\" />
   </ItemGroup>
 
   <ItemGroup>

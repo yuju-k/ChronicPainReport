@@ -4,9 +4,10 @@
              x:Class="swiftPainReport.DetailPage"
              BackgroundColor="Black"
              NavigationPage.HasNavigationBar="False">
-    
+
     <ContentPage.Content>
         <StackLayout>
+
             <Grid VerticalOptions="Center" 
                   HorizontalOptions="Center"
                   WidthRequest="360"
@@ -23,47 +24,51 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
+                <!--이미지 배경 추가-->
+                <Image Source="painlevel_background.png"
+                       Grid.RowSpan="2"
+                       Grid.ColumnSpan="2"
+                       Aspect="AspectFill"
+                       IsVisible="True"/>
+
                 <!-- No pain -->
-                <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="White"/>
+                <!--<BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="White"/>-->
                 <Button Grid.Row="0" Grid.Column="0"
-                        Text=" &#x0a;통증없음"
+                        Text=" &#x0a;　 통증&#x0a;　 없음"
                         ClassId="0"
                         TextColor="Black"
                         BackgroundColor="Transparent"
                         FontSize="Header"
                         Clicked="OnPainLevelClicked"/>
-
                 <!-- Mild -->
-                <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#70AD46"/>
+                <!--<BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#70AD46"/>-->
                 <Button Grid.Row="0" Grid.Column="1"
-                        Text=" &#x0a;경증"
+                        Text=" &#x0a;경증 　"
                         ClassId="1"
                         TextColor="Black"
                         BackgroundColor="Transparent"
                         FontSize="Large"
                         Clicked="OnPainLevelClicked"/>
-                
+
                 <!-- Moderate -->
-                <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="#FF9500"/>
+                <!--<BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="#FF9500"/>-->
                 <Button Grid.Row="1" Grid.Column="1"
-                        Text="심함"
+                        Text="심함 　&#x0a; "
                         ClassId="2"
                         TextColor="Black"
                         BackgroundColor="Transparent"
                         FontSize="Large"
                         Clicked="OnPainLevelClicked"/>
-                
+
                 <!-- Severe -->
-                <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#FE0000"/>
+                <!--<BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#FE0000"/>-->
                 <Button Grid.Row="1" Grid.Column="0"
-                        Text="매우심함"
+                        Text="　 매우&#x0a;　 심함&#x0a; "
                         ClassId="3"
                         TextColor="Black"
                         BackgroundColor="Transparent"
                         FontSize="Large"
                         Clicked="OnPainLevelClicked"/>
-
-                
             </Grid>
         </StackLayout>
     </ContentPage.Content>
