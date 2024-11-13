@@ -1,0 +1,19 @@
+import("$tizen_core/build/dotnet/project.gni")
+
+dotnet_project("swiftPainReport") {   
+  csprojpath = "swiftPainReport.csproj"
+  is_dep = false
+
+  files = [
+      "swiftPainReport.csproj",
+      "swiftPainReport.cs",
+      "App.xaml",
+      "App.xaml.cs",
+      "MainPage.xaml",
+      "MainPage.xaml.cs",
+      "tizen-manifest.xml",
+      "shared/res/swiftPainReport.png",
+  ]
+  deps = [
+  ]
+}

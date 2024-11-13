@@ -1,0 +1,24 @@
+import("$tizen_core/build/dotnet/project.gni")
+
+dotnet_project("AmbientWatch") {   
+  csprojpath = "AmbientWatch.csproj"
+  is_dep = false
+
+  files = [
+      "AmbientWatch.cs",
+      "AmbientWatch.csproj",
+      "AmbientWatchApplication.xaml",
+      "AmbientWatchApplication.xaml.cs",
+      "ClockViewModel.cs",
+      "res/cipher_board_bg.png",
+      "res/hand_hour.png",
+      "res/hand_minute.png",
+      "res/hand_second.png",
+      "res/hands_center.png",
+      "res/second_background.png",
+      "shared/res/AmbientWatch.png",
+      "tizen-manifest.xml",
+  ]
+  deps = [
+  ]
+}

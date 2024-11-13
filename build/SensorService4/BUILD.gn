@@ -1,0 +1,15 @@
+import("$tizen_core/build/dotnet/project.gni")
+
+dotnet_project("SensorService4") {   
+  csprojpath = "SensorService4.csproj"
+  is_dep = false
+
+  files = [
+      "SensorService4.csproj",
+      "SensorService4_App.cs",
+      "tizen-manifest.xml",
+      "shared/res/SensorService4.png",
+  ]
+  deps = [
+  ]
+}

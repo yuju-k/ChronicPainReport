@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="swiftPainReport.MainPage"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="360"
+                HeightRequest="360"
+                RowSpacing="0" ColumnSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- 통증 없음 -->
+                <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="White"/>
+                <Button Grid.Row="0" Grid.Column="0"
+                        Text=" &#x0a;통증없음"
+                        ClassId="nopain"
+                        TextColor="Black"
+                        BackgroundColor="Transparent"
+                        FontSize="Large"
+                        Clicked="OnPainButtonClicked"/>
+                
+                <!-- 허리 -->
+                <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#7A947C"/>
+                <Button Grid.Row="0" Grid.Column="1"
+                        Text=" &#x0a;허리"
+                        ClassId="waist"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        FontSize="Large"
+                        Clicked="OnPainButtonClicked"/>
+                
+                <!-- 어깨 -->
+                <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="#5B6B84"/>
+                <Button Grid.Row="1" Grid.Column="1"
+                        Text="어깨&#x0a; "
+                        ClassId="shoulder"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        FontSize="Large"
+                        Clicked="OnPainButtonClicked"/>
+                
+                <!-- 목 -->
+                <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#B48B8B"/>
+                <Button Grid.Row="1" Grid.Column="0"
+                        Text="목&#x0a; "
+                        ClassId="neck"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        FontSize="Large"
+                        Clicked="OnPainButtonClicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

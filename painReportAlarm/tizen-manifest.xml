@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.tizen.example.painReportAlarm" version="1.0.0" api-version="5.5" xmlns="http://tizen.org/ns/packages">
+    <profile name="wearable" />
+    <service-application appid="org.tizen.example.painReportAlarm" exec="painReportAlarm.dll" multiple="false" nodisplay="true" taskmanage="true" api-version="6" type="dotnet" auto-restart="true" on-boot="true">
+        <label>painReportAlarm</label>
+        <icon>painReportAlarm.png</icon>
+        <splash-screens />
+    </service-application>
+    <shortcut-list />
+    <privileges>
+        <privilege>http://tizen.org/privilege/notification</privilege>
+        <privilege>http://tizen.org/privilege/alarm.set</privilege>
+        <privilege>http://tizen.org/privilege/alarm.get</privilege>
+    </privileges>
+    <dependencies />
+    <provides-appdefined-privileges />
+</manifest>

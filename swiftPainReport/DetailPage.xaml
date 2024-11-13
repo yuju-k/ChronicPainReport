@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="swiftPainReport.DetailPage"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid VerticalOptions="Center" 
+                  HorizontalOptions="Center"
+                  WidthRequest="360"
+                  HeightRequest="360"
+                  RowSpacing="0" 
+                  ColumnSpacing="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- No pain -->
+                <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="White"/>
+                <Button Grid.Row="0" Grid.Column="0"
+                        Text=" &#x0a;통증없음"
+                        ClassId="0"
+                        TextColor="Black"
+                        BackgroundColor="Transparent"
+                        FontSize="Header"
+                        Clicked="OnPainLevelClicked"/>
+
+                <!-- Mild -->
+                <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#70AD46"/>
+                <Button Grid.Row="0" Grid.Column="1"
+                        Text=" &#x0a;경증"
+                        ClassId="1"
+                        TextColor="Black"
+                        BackgroundColor="Transparent"
+                        FontSize="Large"
+                        Clicked="OnPainLevelClicked"/>
+                
+                <!-- Moderate -->
+                <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="#FF9500"/>
+                <Button Grid.Row="1" Grid.Column="1"
+                        Text="심함"
+                        ClassId="2"
+                        TextColor="Black"
+                        BackgroundColor="Transparent"
+                        FontSize="Large"
+                        Clicked="OnPainLevelClicked"/>
+                
+                <!-- Severe -->
+                <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#FE0000"/>
+                <Button Grid.Row="1" Grid.Column="0"
+                        Text="극심함"
+                        ClassId="3"
+                        TextColor="Black"
+                        BackgroundColor="Transparent"
+                        FontSize="Large"
+                        Clicked="OnPainLevelClicked"/>
+
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

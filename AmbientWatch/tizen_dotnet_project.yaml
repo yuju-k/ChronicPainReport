@@ -1,0 +1,18 @@
+# csproj file path
+csproj_file: AmbientWatch.csproj
+
+# files monitored for dirty/modified status
+files:
+  - AmbientWatch.cs
+  - AmbientWatch.csproj
+  - AmbientWatchApplication.xaml
+  - AmbientWatchApplication.xaml.cs
+  - ClockViewModel.cs
+  - res/cipher_board_bg.png
+  - res/hand_hour.png
+  - res/hand_minute.png
+  - res/hand_second.png
+  - res/hands_center.png
+  - res/second_background.png
+  - shared/res/AmbientWatch.png
+  - tizen-manifest.xml

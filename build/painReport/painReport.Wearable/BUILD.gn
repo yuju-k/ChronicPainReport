@@ -1,0 +1,16 @@
+import("$tizen_core/build/dotnet/project.gni")
+
+dotnet_project("painReport/painReport.Wearable") {   
+  csprojpath = "painReport.Wearable.csproj"
+  is_dep = false
+
+  files = [
+      "painReport.Wearable.csproj",
+      "painReport.Wearable.cs",
+      "tizen-manifest.xml",
+      "shared/res/painReport.Wearable.png",
+  ]
+  deps = [
+      "//painReport/painReport",
+  ]
+}

@@ -1,0 +1,13 @@
+# csproj file path
+csproj_file: swiftPainReport.csproj
+
+# files monitored for dirty/modified status
+files:
+  - swiftPainReport.csproj
+  - swiftPainReport.cs
+  - App.xaml
+  - App.xaml.cs
+  - MainPage.xaml
+  - MainPage.xaml.cs
+  - tizen-manifest.xml
+  - shared/res/swiftPainReport.png

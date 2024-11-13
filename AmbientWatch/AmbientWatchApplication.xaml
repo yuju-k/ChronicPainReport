@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AmbientWatch.AmbientWatchApplication">
+    <Application.MainPage>
+        <ContentPage>
+            <AbsoluteLayout BackgroundColor="Black">
+                <!-- Digital Time Display (AM/PM hh:mm) -->
+                <Label Text="{Binding Time, StringFormat='{0:tt hh:mm}'}"
+                       FontSize="50"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"
+                       AbsoluteLayout.LayoutBounds="0.5, 0.4" />
+
+                <!-- Pain Record Button - Visible only in active mode -->
+                <Button Text="통증 기록"
+                        FontSize="Large"
+                        IsVisible="{Binding AmbientModeDisabled}"
+                        Command="{Binding PainRecordCommand}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        AbsoluteLayout.LayoutBounds="0.5, 0.7" />
+            </AbsoluteLayout>
+        </ContentPage>
+    </Application.MainPage>
+</Application>
