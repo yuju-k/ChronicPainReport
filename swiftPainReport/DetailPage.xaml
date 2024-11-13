@@ -56,7 +56,7 @@
                 <!-- Severe -->
                 <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#FE0000"/>
                 <Button Grid.Row="1" Grid.Column="0"
-                        Text="극심함"
+                        Text="매우심함"
                         ClassId="3"
                         TextColor="Black"
                         BackgroundColor="Transparent"

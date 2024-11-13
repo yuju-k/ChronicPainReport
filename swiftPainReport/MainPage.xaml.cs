@@ -62,7 +62,15 @@ namespace swiftPainReport
 
                     if (saveResult)
                     {
-                        await DisplayAlert("Success", "Pain level saved", "OK");
+                        //await DisplayAlert("Success", "Pain level saved", "OK");
+                        //Tizen.Applications.Application.Current.Exit();
+
+                        // Alert를 보여주고 자동으로 앱 종료
+                        var alertTask = DisplayAlert("통증없음", "통증 기록이 완료되었습니다.", "확인");
+                        var delayTask = Task.Delay(3000);
+
+                        // 둘 중 먼저 완료되는 작업(사용자가 확인 누르거나 3초 지남) 후 앱 종료
+                        await Task.WhenAny(alertTask, delayTask);
                         Tizen.Applications.Application.Current.Exit();
                     }
                     else

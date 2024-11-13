@@ -31,7 +31,7 @@ msbuild_path = ""
 dotnet_build_tool = "dotnet-cli"
 
 # Working folder for dotnet workspace, paths to csproj or sln
-working_folder= "C:/Users/tet50/source/repos/AmbientWatch/AmbientWatch"
+working_folder= "C:/Users/tet50/source/repos/AmbientWatch/swiftPainReport"
 
 target_os = "linux"
 
@@ -41,13 +41,13 @@ hyb_web_pkg = ""
 hyb_native_pkg = ""
 hyb_native_pkg_id = ""
 hyb_native_pkg_ver = ""
-hyb_dotnet_pkg = "C:\Users\tet50\source\repos\AmbientWatch\AmbientWatch\bin\Debug\tizen60\org.tizen.example.AmbientWatch-1.0.0.tpk"
+hyb_dotnet_pkg = "C:\Users\tet50\source\repos\AmbientWatch\swiftPainReport\bin\Debug\tizen60\org.tizen.example.swiftPainReport-1.0.0.tpk"
 hyb_dotnet_dep_pkgs = ""
 hyb_resource_pkg = ""
-hyb_base_pkg = "C:\Users\tet50\source\repos\AmbientWatch\AmbientWatch\bin\Debug\tizen60\org.tizen.example.AmbientWatch-1.0.0.tpk"
-hyb_final_pkg = "org.tizen.example.AmbientWatch-1.0.0.tpk"
-hyb_final_pkg_id = "org.tizen.example.AmbientWatch"
-hyb_final_app_id = "org.tizen.example.AmbientWatch"
+hyb_base_pkg = "C:\Users\tet50\source\repos\AmbientWatch\swiftPainReport\bin\Debug\tizen60\org.tizen.example.swiftPainReport-1.0.0.tpk"
+hyb_final_pkg = "org.tizen.example.swiftPainReport-1.0.0.tpk"
+hyb_final_pkg_id = "org.tizen.example.swiftPainReport"
+hyb_final_app_id = "org.tizen.example.swiftPainReport"
 hyb_final_pkg_type = "dotnet"
 hyb_web_widget_id = ""
 utc_bin_path = ""
@@ -82,19 +82,19 @@ strip_debug_info = false
 default_signing_profile = "false"
 
 # Author certificate for package signing
-author_cert = "C:/Users/tet50/SamsungCertificate/wellcomlab/author.p12"
+author_cert = "C:/Users/tet50/SamsungCertificate/homewifi/author.p12"
 
 # Distributor certificate for package signing
-distributor_cert = "C:/Users/tet50/SamsungCertificate/wellcomlab/distributor.p12"
+distributor_cert = "C:/Users/tet50/SamsungCertificate/homewifi/distributor.p12"
 
 # Distributor2 certificate for package signing
 distributor2_cert = ""
 
 # Author profile item password attr 
-author_pass_attr = "C:\Users\tet50\SamsungCertificate\wellcomlab\author.pwd"
+author_pass_attr = "C:\Users\tet50\SamsungCertificate\homewifi\author.pwd"
 
 # Distributor profile item password attr 
-distributor_pass_attr = "C:\Users\tet50\SamsungCertificate\wellcomlab\distributor.pwd"
+distributor_pass_attr = "C:\Users\tet50\SamsungCertificate\homewifi\distributor.pwd"
 
 # Distributor2 profile item password attr 
 distributor2_pass_attr = ""
