@@ -27,38 +27,6 @@ namespace AmbientWatch
             ViewModel.Time = GetCurrentTime().UtcTimestamp;
             watchfaceApp.BindingContext = ViewModel;
             LoadWatchface(watchfaceApp);
-
-            LaunchServiceApp();
-        }
-
-        private void LaunchServiceApp()
-        {
-            try
-            {
-                string serviceAppId = "org.tizen.example.swiftPainReport";
-
-                AppControl appControl = new AppControl
-                {
-                    ApplicationId = serviceAppId,
-                    Operation = AppControlOperations.Default
-                };
-
-                AppControl.SendLaunchRequest(appControl, (request, reply, result) =>
-                {
-                    if (result == AppControlReplyResult.Succeeded)
-                    {
-                        Tizen.Log.Info("AmbientWatch", "Service launch succeeded");
-                    }
-                    else
-                    {
-                        Tizen.Log.Error("AmbientWatch", $"Service launch failed: {result}");
-                    }
-                });
-            }
-            catch (Exception ex)
-            {
-                Tizen.Log.Error("AmbientWatch", $"Service launch exception: {ex.Message}\n{ex.StackTrace}");
-            }
         }
 
         /// Called when the time tick event occurs

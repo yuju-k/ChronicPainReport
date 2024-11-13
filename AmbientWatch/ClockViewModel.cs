@@ -30,7 +30,7 @@ namespace AmbientWatch
         {
             try
             {
-                const string PainReportAppId = "org.tizen.example.painReport3";
+                const string PainReportAppId = "org.tizen.example.swiftPainReport";
                 bool success = await _appLaunchService.LaunchAppAsync(PainReportAppId);
 
                 if (!success)

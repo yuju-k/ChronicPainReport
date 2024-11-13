@@ -11,12 +11,12 @@ tizen_workspace("${hyb_final_pkg_id}") {
 
     executables = []
         projects += [
-            "//painReportAlarm",
+            "//AmbientWatch",
         ]
         
         # fill executables with the package_names of the tpk paths, for launch cmd
         executables += [
-            "org.tizen.example.painReportAlarm",
+            "org.tizen.example.AmbientWatch",
         ]
 
     if (test_build) {

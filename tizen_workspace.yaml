@@ -50,7 +50,7 @@ tizen_nuixaml_version: 1.0.34
 tizen_hotreload_version: 1.0.1
 
 # Working folder/project in the multi project workspace, paths to the project root or the manifest/config/csproj file
-working_folder: C:\Users\tet50\source\repos\AmbientWatch\painReportAlarm
+working_folder: C:\Users\tet50\source\repos\AmbientWatch\AmbientWatch
 
 # Default options to be passed to Chrome when running web simulator
 chrome_simulator_options:
@@ -81,7 +81,7 @@ chrome_inspector_options:
 chrome_inspector_data_path: C:\tizen-studio-data.1\chrome-user-data
 
 # default arch for build, [x86/ x86_64/ arm/ aarch64]
-arch: x86
+arch: arm
 
 # Enable size optimization of wgt for web workspace
 opt: false
