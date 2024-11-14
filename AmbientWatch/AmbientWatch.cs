@@ -2,6 +2,7 @@ using System;
 using Xamarin.Forms;
 using Tizen.Applications;
 using Tizen.Wearable.CircularUI.Forms.Renderer.Watchface;
+using Tizen.Applications.Notifications;
 
 
 namespace AmbientWatch
@@ -21,7 +22,6 @@ namespace AmbientWatch
 
             // Display 상태 항상 ON
             Tizen.System.Power.RequestLock(Tizen.System.PowerLock.DisplayNormal, 0);
-
             var watchfaceApp = new AmbientWatchApplication();
             ViewModel = new ClockViewModel(this);
             ViewModel.Time = GetCurrentTime().UtcTimestamp;

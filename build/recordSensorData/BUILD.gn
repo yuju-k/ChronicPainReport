@@ -1,0 +1,15 @@
+import("$tizen_core/build/dotnet/project.gni")
+
+dotnet_project("recordSensorData") {   
+  csprojpath = "recordSensorData.csproj"
+  is_dep = false
+
+  files = [
+      "recordSensorData.csproj",
+      "recordSensorData_App.cs",
+      "tizen-manifest.xml",
+      "shared/res/recordSensorData.png",
+  ]
+  deps = [
+  ]
+}

@@ -1,0 +1,15 @@
+import("$tizen_core/build/dotnet/project.gni")
+
+dotnet_project("myPainReportAlarm") {   
+  csprojpath = "myPainReportAlarm.csproj"
+  is_dep = false
+
+  files = [
+      "myPainReportAlarm.csproj",
+      "myPainReportAlarm_App.cs",
+      "tizen-manifest.xml",
+      "shared/res/myPainReportAlarm.png",
+  ]
+  deps = [
+  ]
+}

@@ -1,0 +1,9 @@
+# csproj file path
+csproj_file: myPainReportAlarm.csproj
+
+# files monitored for dirty/modified status
+files:
+  - myPainReportAlarm.csproj
+  - myPainReportAlarm_App.cs
+  - tizen-manifest.xml
+  - shared/res/myPainReportAlarm.png

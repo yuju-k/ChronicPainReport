@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.tizen.example.myPainReportAlarm" version="1.0.0" api-version="5.5" xmlns="http://tizen.org/ns/packages">
+    <profile name="common" />
+    <service-application appid="org.tizen.example.myPainReportAlarm" exec="myPainReportAlarm.dll" multiple="false" nodisplay="true" taskmanage="false" api-version="6" type="dotnet" auto-restart="true" on-boot="true">
+        <label>myPainReportAlarm</label>
+        <icon>myPainReportAlarm.png</icon>
+        <background-category value="background-network" />
+        <background-category value="sensor" />
+        <splash-screens />
+    </service-application>
+    <shortcut-list />
+    <privileges>
+        <privilege>http://tizen.org/privilege/notification</privilege>
+        <privilege>http://tizen.org/privilege/alarm.get</privilege>
+        <privilege>http://tizen.org/privilege/alarm.set</privilege>
+    </privileges>
+    <dependencies />
+    <provides-appdefined-privileges />
+</manifest>

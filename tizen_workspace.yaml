@@ -50,7 +50,7 @@ tizen_nuixaml_version: 1.0.34
 tizen_hotreload_version: 1.0.1
 
 # Working folder/project in the multi project workspace, paths to the project root or the manifest/config/csproj file
-working_folder: C:/Users/tet50/source/repos/AmbientWatch/painReportAlarm
+working_folder: C:\Users\tet50\source\repos\AmbientWatch\myPainReportAlarm
 
 # Default options to be passed to Chrome when running web simulator
 chrome_simulator_options:
@@ -102,6 +102,7 @@ projects:
   chronicPainReport: []
   chronicPainReport2: []
   cpuLockService: []
+  myPainReportAlarm: []
   painReport: []
   painReport/painReport: []
   painReport/painReport.Wearable:
@@ -109,6 +110,7 @@ projects:
   painReport2: []
   painReport3: []
   painReportAlarm: []
+  painReportAlarm2: []
   painReportNotificationService: []
   recordSensorData: []
   sensorService: []

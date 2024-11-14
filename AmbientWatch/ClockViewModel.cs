@@ -6,6 +6,7 @@ using System.Windows.Input;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Tizen.Wearable.CircularUI.Forms.Renderer.Watchface;
+using Tizen.Applications;
 
 namespace AmbientWatch
 {
@@ -18,6 +19,7 @@ namespace AmbientWatch
         {
             _appLaunchService = new AppLaunchService();
             AmbientModeDisabled = true;
+
             InitializeCommands();
         }
 
@@ -35,14 +37,12 @@ namespace AmbientWatch
 
                 if (!success)
                 {
-                    // TODO: 앱 실행 실패 시 처리 로직 추가
-                    // 예: 사용자에게 알림 표시
+                    Tizen.Log.Error("AmbientWatch", "Failed to launch PainReport app");
                 }
             }
             catch (Exception ex)
             {
-                // TODO: 예외 발생 시 처리 로직 추가
-                // 예: 로그 기록, 사용자에게 알림
+                Tizen.Log.Error("AmbientWatch", $"Failed to launch PainReport app: {ex.Message}");
             }
         }
 
