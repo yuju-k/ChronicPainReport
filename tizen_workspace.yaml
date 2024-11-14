@@ -50,7 +50,7 @@ tizen_nuixaml_version: 1.0.34
 tizen_hotreload_version: 1.0.1
 
 # Working folder/project in the multi project workspace, paths to the project root or the manifest/config/csproj file
-working_folder: C:\Users\tet50\source\repos\AmbientWatch\swiftPainReport
+working_folder: C:\Users\tet50\source\repos\AmbientWatch\painReportAlarm
 
 # Default options to be passed to Chrome when running web simulator
 chrome_simulator_options:

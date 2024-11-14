@@ -8,12 +8,22 @@ namespace painReportAlarm
         protected override void OnCreate()
         {
             base.OnCreate();
-            Tizen.Log.Info("App", "Service created");
+            Tizen.Log.Info("notiApp", "Service created");
+
+            AlarmNoti alarmNoti = new AlarmNoti();
+            alarmNoti.SetDailyAlarm(9, 0);
+            alarmNoti.SetDailyAlarm(15, 0);
+            alarmNoti.SetDailyAlarm(21, 0);
         }
 
         protected override void OnTerminate()
         {
+            Tizen.Log.Info("notiApp", "Service terminated");
             base.OnTerminate();
+
+            AlarmManager.CancelAll();
+            NotificationManager.DeleteAll();
+
         }
 
         static void Main(string[] args)
