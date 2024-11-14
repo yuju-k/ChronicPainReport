@@ -1,0 +1,9 @@
+# csproj file path
+csproj_file: recordSensorData.csproj
+
+# files monitored for dirty/modified status
+files:
+  - recordSensorData.csproj
+  - recordSensorData_App.cs
+  - tizen-manifest.xml
+  - shared/res/recordSensorData.png
